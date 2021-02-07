@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href=""> -->
+    </head>
+    <body>
+        <h1>Notes App</h1>
+        <form action="" id="showNotes">
+            Id : <input type="text" name="noteId" id="noteId"><br>
+            <button class="getNotesButton">Get All Notes</button>
+        </form><br><br>
+
+        <form action="" id="newNote">
+            Title : <input type="text" name="noteTitle" id="title"><br><br>
+            Description : <input type="text" name="noteDescription" id="description"><br>
+            <button class="save" name="submit" type="submit">Submit</button>
+        </form>
+
+        <form action="" id="deleteNote">
+            NoteID : <input type="text" name="noteId" id="noteId"><br><br>
+            <button class="delete" name="submit" type="submit">Delete</button>
+        </form>
+
+        <form action="" id="updateNote">
+            Id : <input type="text" name="noteId" id="noteId"><br><br>
+            Title : <input type="text" name="noteTitle" id="noteTitle"><br><br>
+            Description : <input type="text" name="noteDescription" id="noteDescription"><br><br>
+            <button class="update" name="submit" type="submit">Update</button>
+        </form>
+
+        <div class="results">
+        </div>
+
+        <script src="api.js" async defer></script>
+    </body>
+</html>
