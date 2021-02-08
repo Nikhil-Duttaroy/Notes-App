@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 1px solid black;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+caption{
+    text-align: center;
+}
+
+.resultsContainer{
+    width: 25%;
+    margin: 0 auto;
+}

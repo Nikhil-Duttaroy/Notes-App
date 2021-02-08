@@ -4,34 +4,46 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href=""> -->
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Notes App</h1>
+        <h1 style="text-align: center;">Notes App</h1>
+        <div class="container">
+            
         <form action="" id="showNotes">
+            <caption><h3>Search / See All</h3></caption>
             Id : <input type="text" name="noteId" id="noteId"><br>
             <button class="getNotesButton">Get All Notes</button>
         </form><br><br>
+        </div>
 
+        <div class="container">
         <form action="" id="newNote">
+            <caption><h3>Create Note</h3></caption>
             Title : <input type="text" name="noteTitle" id="title"><br><br>
             Description : <input type="text" name="noteDescription" id="description"><br>
             <button class="save" name="submit" type="submit">Submit</button>
         </form>
-
+    </div>
+        <div class="container">
         <form action="" id="deleteNote">
+            <caption><h3>Delete Note</h3></caption>
             NoteID : <input type="text" name="noteId" id="noteId"><br><br>
             <button class="delete" name="submit" type="submit">Delete</button>
         </form>
-
+        </div>
+        <div class="container">
         <form action="" id="updateNote">
+            <caption ><h3>Update Note</h3></caption>
             Id : <input type="text" name="noteId" id="noteId"><br><br>
             Title : <input type="text" name="noteTitle" id="noteTitle"><br><br>
             Description : <input type="text" name="noteDescription" id="noteDescription"><br><br>
             <button class="update" name="submit" type="submit">Update</button>
         </form>
-
-        <div class="results">
+        </div>
+        <h2 style="text-align: center;">Results</h2>
+        <div class="resultsContainer">
+            <h3 class="results"></h3>
         </div>
 
         <script src="api.js" async defer></script>

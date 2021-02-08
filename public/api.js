@@ -14,12 +14,12 @@ function singleRequest(event){
             if(!noteId){
                 document.getElementsByClassName("results").innerHTML +=" ";
                 for(var i in data){
-                document.querySelector(".results").innerHTML +=data[i].noteTitle + '<br/>';
+                document.querySelector(".results").innerHTML += data[i].noteTitle +'<br/>';
             // document.querySelector("#results").innerHTML +=JSON.stringify(d) + '<br/>';
                 }
             }
             else{
-                document.querySelector(".results").innerHTML +=data.noteTitle ;
+                document.querySelector(".results").innerHTML += data.noteTitle  ;
             }
             console.log(data);
         })
